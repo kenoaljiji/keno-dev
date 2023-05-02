@@ -1,3 +1,26 @@
 .my-1 {
   margin: 1rem 0;
 }
+.bg-primary {
+  background: $color-primary;
+}
+.bg-secondary {
+  background: $color-secondary;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+.col-2-1fr {
+  grid-template-columns: 1fr 1fr;
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flex-column-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

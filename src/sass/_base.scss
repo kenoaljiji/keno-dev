@@ -12,9 +12,13 @@ html {
   height: 100%;
   font-size: 62.5%;
 
-  @include respond(phone) {
-    font-size: 56%;
+  @include respond(tab-land) {
+    font-size: 50%;
   }
+}
+
+.App {
+  position: relative;
 }
 body {
   font-family: 'Inter', sans-serif;
@@ -30,17 +34,39 @@ body {
 
 h1 {
   font-size: 6.4rem;
+  text-align: left;
+  @include respond(tab-land) {
+    font-size: 5rem;
+  }
 }
 h2 {
   font-size: 4.8rem;
+
+  @include respond(tab-land) {
+    font-size: 3.5rem;
+  }
 }
 
 h3 {
   font-size: 3.6rem;
+
+  @include respond(tab-land) {
+    font-size: 2.5rem;
+  }
 }
 
 p {
   font-size: 2.4rem;
+
+  @include respond(tab-land) {
+    font-size: 1.9rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
 }
 
 a {
@@ -54,11 +80,35 @@ ul li {
 }
 
 .container {
-  width: 114rem;
+  max-width: 114rem;
+  width: 100%;
   margin: 2rem auto;
   padding: 1rem;
+  align-self: center;
 }
+
+// Define a variable to store the boolean value
+$use-two-columns: true;
+
+section {
+  height: 100%;
+}
+// Define the grid-template-columns property with a conditional statement
+
 .grid {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+  @include respond(tab-land) {
+  }
+}
+
+.side {
+  background: $color-primary-dark;
+}
+/* .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -75,4 +125,101 @@ ul li {
   @include respond(phone) {
     grid-template-columns: 1fr;
   }
+} */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  /* overflow: hidden; */
+  padding: 0;
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+
+/* button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  background: transparent;
+} */
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* ul {
+  padding: 25px;
+  position: fixed;
+  top: 100px;
+  width: 230px;
+} */
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

@@ -1,0 +1,57 @@
+.footer {
+  text-align: left;
+  padding: 4rem;
+  padding-left: 40px;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  background: #2b3037;
+
+  p {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 2rem;
+  }
+
+  &-logo {
+    h3 {
+      span {
+        color: $color-red;
+      }
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  &-adress {
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-socials {
+    h4 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: $color-red;
+      margin-bottom: 1.5rem;
+    }
+    i {
+      margin-right: 20px;
+      font-size: 2.4rem;
+    }
+  }
+  &-copyright {
+    p {
+      font-size: 2rem;
+      background: #241d1d;
+      padding: 1rem;
+    }
+    i {
+      color: $color-red;
+    }
+  }
+}

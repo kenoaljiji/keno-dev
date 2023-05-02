@@ -1,0 +1,65 @@
+.home {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 20px;
+
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  &-heading {
+    display: flex;
+    flex-direction: column;
+    flex-basis: unset;
+
+    @include respond(tab-land) {
+      flex-basis: 65%;
+    }
+    @include respond(tab-port) {
+      flex-basis: unset;
+    }
+
+    @include respond(phone) {
+      margin: 3rem 0;
+    }
+
+    h1 {
+      span {
+        color: $color-red;
+      }
+    }
+  }
+
+  &-text {
+    margin-top: 2rem;
+    @include respond(phone) {
+      margin-top: 4rem;
+    }
+    P {
+      font-size: 3rem;
+    }
+    :nth-child(2) {
+      color: $color-red;
+      margin: 0.5rem 0;
+      font-weight: 500;
+    }
+    &--purple {
+      color: $color-purple;
+      margin-left: 1rem;
+    }
+    &--yellow {
+      color: $color-yellow !important;
+    }
+  }
+  &-picture {
+    @include respond(tab-land) {
+      text-align: center;
+      img {
+        width: 80%;
+      }
+    }
+  }
+}

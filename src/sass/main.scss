@@ -1,4 +1,12 @@
 @import './variables';
 @import './mixins';
-@import './utility';
 @import './base';
+@import './utility';
+@import './components/buttons.scss';
+@import './sections/home.scss';
+@import './components/navigation.scss';
+@import './sections/skills.scss';
+@import './sections/about.scss';
+@import './sections/form.scss';
+@import './sections/projects.scss';
+@import './sections/footer.scss';

@@ -1,0 +1,28 @@
+.skills {
+  h2 {
+    padding-top: 6rem;
+    span {
+      color: $color-red;
+    }
+  }
+
+  &-description {
+    text-align: center;
+    margin: 10rem auto;
+    padding: 0 10px;
+    max-width: 80rem;
+  }
+
+  h3 {
+    display: inline-block;
+    text-align: center;
+    border-bottom: 3px solid $color-red;
+    margin-bottom: 4rem;
+  }
+
+  &-icons {
+    img {
+      width: 90%;
+    }
+  }
+}

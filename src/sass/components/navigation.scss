@@ -1,0 +1,28 @@
+.humburger {
+  position: absolute;
+  width: 70px;
+  top: 20px;
+  right: 50px;
+  padding: 20px;
+  border-radius: 50%;
+
+  &:hover {
+    background: #222326;
+    cursor: pointer;
+  }
+
+  &-line1,
+  &-line2,
+  &-line3 {
+    width: 60px;
+    height: 2px;
+    background: #fff;
+  }
+
+  &-line2 {
+    margin: 6px 0;
+    margin-left: -10px;
+  }
+}
+.menu {
+}
