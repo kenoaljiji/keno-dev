@@ -33,8 +33,10 @@ const About = () => {
               <h3>
                 <span>Want</span> To Hire Me
               </h3>
-              <div className='btn-container'>
-                <a href='#'>Contact Me</a>
+              <div className='btn-container mb-2'>
+                <a href='/' className='cta'>
+                  <span>Contact Me</span>
+                </a>
               </div>
             </div>
             <div className='about-picture'>

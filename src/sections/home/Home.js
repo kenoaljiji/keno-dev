@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import imageKenan from '../../assets/kenan.png';
 
 const Home = () => {
+  const [text, setText] = useState('');
+  const [fullText, setFullText] = useState(
+    `<p>Fullstack Developer / Designer</p>
+    `
+  );
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      setTimeout(() => {
+        setText(text + fullText[index]);
+        setIndex(index + 1);
+      }, 50);
+    }
+  }, [index]);
+
   return (
     <section>
       <div className='grid bg-primary bg-overlay'>
@@ -14,15 +30,16 @@ const Home = () => {
               Web Developer
             </h1>
             <div className='home-text'>
-              <p>{'<p>Fullstack Developer / Designer<p>'}</p>
+              <p style={{ marginBottom: '10px', marginTop: '20px' }}>{text}</p>
               <p>
-                <span className='home-text--purple'>return </span>
-                <span className='home-text--yellow'>alert</span>("I’m looking
-                for a new role");
+                return <span className='home-text--yellow'> alert</span>("I’m
+                looking for a new role");
               </p>
-            </div>
-            <div className='btn-container'>
-              <a href='#'>Contact Me</a>
+              <div className='btn-container'>
+                <a href='/' className='cta'>
+                  <span>Contact Me</span>
+                </a>
+              </div>
             </div>
           </div>
           <div className='home-picture'>

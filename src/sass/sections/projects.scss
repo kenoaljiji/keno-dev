@@ -1,6 +1,3 @@
-.section {
-}
-
 .projects {
   h2 {
     margin: 4rem 0;
@@ -57,8 +54,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
       justify-content: center;
+
+      img {
+        width: 70%;
+      }
+
+      img[alt~='Keni'] {
+        width: 40%;
+      }
     }
 
     .flip-card-back {
@@ -68,12 +72,14 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      font-size: 1.5rem;
 
       h3 {
         padding: 1rem 0;
         color: $color-red;
 
         p {
+          font-size: 1.5rem !important;
         }
       }
     }

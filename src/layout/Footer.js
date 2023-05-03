@@ -3,7 +3,7 @@ import image from '../assets/kenodev.png';
 
 const Footer = () => {
   return (
-    <section>
+    <footer>
       <div className='footer'>
         <div className='footer-logo'>
           <h3>
@@ -15,19 +15,19 @@ const Footer = () => {
         <div className='footer-links'>
           <ul>
             <li>
-              <a href=''>Home</a>
+              <a href='#'>Home</a>
             </li>
             <li>
-              <a href=''>Projects</a>
+              <a href='#'>Projects</a>
             </li>
             <li>
-              <a href=''>Skills</a>
+              <a href='#'>Skills</a>
             </li>
             <li>
-              <a href=''>About</a>
+              <a href='#'>About</a>
             </li>
             <li>
-              <a href=''>Contact</a>
+              <a href='#'>Contact</a>
             </li>
           </ul>
         </div>
@@ -51,7 +51,7 @@ const Footer = () => {
           Designed and developed with <i class='fa-solid fa-heart'></i>
         </p>
       </div>
-    </section>
+    </footer>
   );
 };
 

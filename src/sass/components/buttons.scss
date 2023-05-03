@@ -1,8 +1,9 @@
 .btn-container {
-  margin-top: 5rem;
+  margin-top: 6rem;
 
-  a {
-    border-radius: 20px;
+  /*   a {
+    position: relative;
+    border-radius: 5px;
     font-size: 2rem;
     font-family: inherit;
     display: inline-block;
@@ -10,5 +11,44 @@
     color: #fff;
     padding: 12px 40px;
     border: 1px solid #eee;
+    z-index: 999;
+  } */
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: rgba($color-red, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+
+  span {
+    position: relative;
+    font-size: 1.7rem;
+
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  &:hover:before {
+    width: 100%;
+    background: rgba($color-red, 0.8);
+  }
+
+  &:active {
+    transform: scale(0.96);
   }
 }

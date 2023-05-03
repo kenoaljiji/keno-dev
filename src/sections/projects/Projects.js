@@ -9,16 +9,22 @@ const projects = [
     src: image1,
     name: 'Keni',
     description: 'Presentational accountant website',
+    buttonText: 'Visit Page',
+    url: 'https://keni.ba',
   },
   {
     src: image2,
     name: 'Contextus',
-    description: 'This is application for connect other peoples',
+    description: 'Custom Translator App for students',
+    buttonText: 'Visit Page',
+    url: 'https://contextus.at',
   },
   {
     src: image3,
     name: 'KenoDev',
     description: 'Check source code for this project',
+    buttonText: 'GitHub',
+    url: 'https://github.com/kenoaljiji/keno-dev',
   },
 ];
 
@@ -48,6 +54,11 @@ const Projects = () => {
                     <div className='flip-card-back'>
                       <h3>{item.name}</h3>
                       <p>{item.description}</p>
+                      <div className='btn-container'>
+                        <a href={item.url} className='cta'>
+                          <span>{item.buttonText}</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
