@@ -3,16 +3,12 @@ footer {
     min-height: unset;
   }
 } */
+  background: #2b3037;
 }
 
 .footer {
   text-align: left;
-  padding: 4rem;
-  padding-left: 40px;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
-  background: #2b3037;
+  padding-top: 5rem;
 
   p {
     font-size: 2rem;
@@ -23,6 +19,7 @@ footer {
   }
 
   &-logo {
+    margin: 2rem 0 5rem;
     h3 {
       span {
         color: $color-red;
@@ -31,6 +28,9 @@ footer {
     p {
       margin-top: 1rem;
     }
+  }
+
+  &-links {
   }
 
   &-adress {
@@ -52,6 +52,8 @@ footer {
     }
   }
   &-copyright {
+    text-align: center;
+    margin-top: 3rem;
     p {
       font-size: 2rem;
       background: #241d1d;

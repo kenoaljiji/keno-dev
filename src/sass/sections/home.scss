@@ -3,7 +3,7 @@
   text-align: left;
   align-items: center;
   gap: 3rem;
-  padding-left: 20px;
+  background-color: #303734;
 
   @include respond(tab-port) {
     flex-direction: column-reverse;

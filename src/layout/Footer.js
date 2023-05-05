@@ -3,8 +3,8 @@ import image from '../assets/kenodev.png';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className='footer'>
+    <footer className='footer'>
+      <div className='container flex-between'>
         <div className='footer-logo'>
           <h3>
             Keno<span>Dev</span>

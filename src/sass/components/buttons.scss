@@ -21,6 +21,9 @@
   padding: 19px 22px;
   transition: all 0.2s ease;
 
+  @include respond(tab-land) {
+  }
+
   &:before {
     content: '';
     position: absolute;

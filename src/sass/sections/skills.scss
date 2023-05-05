@@ -1,4 +1,6 @@
 .skills {
+  background-color: #323a43;
+  display: flex;
   h2 {
     span {
       color: $color-red;
@@ -7,9 +9,9 @@
 
   &-description {
     text-align: center;
-    margin: 5rem auto;
-    padding: 0 10px;
-    max-width: 80rem;
+    margin: 5rem auto 10rem;
+
+    max-width: 70rem;
   }
 
   h3 {
