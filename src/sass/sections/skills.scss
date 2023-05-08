@@ -1,6 +1,11 @@
 .skills {
   background-color: #323a43;
   display: flex;
+
+  @include respond(phone) {
+    min-height: 100%;
+    padding: 10rem 0;
+  }
   h2 {
     span {
       color: $color-red;

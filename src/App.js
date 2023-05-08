@@ -1,18 +1,16 @@
-import './App.css';
 import Home from './sections/home/Home';
-import { Example } from './components/Example';
+
 import Skills from './sections/skills/Skills';
 import About from './sections/about/About';
 import Contact from './sections/contact/Contact';
 import Projects from './sections/projects/Projects';
 import Footer from './layout/Footer';
-import Humburger from './layout/Humburger';
+import Menu from './components/menu/Menu';
 
 const App = () => {
   return (
-    <div className='App'>
-      {/*   <Example /> */}
-      <Humburger />
+    <div>
+      <Menu />
       <Home />
       <Projects />
       <Skills />

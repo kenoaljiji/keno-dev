@@ -4,7 +4,7 @@ import Card from '../../components/Card';
 
 const Projects = () => {
   return (
-    <section className='projects'>
+    <section className='projects' id='projects'>
       <div className='container flex-column-center'>
         <h2>
           My<span> Projects</span>

@@ -3,7 +3,7 @@ import iconsImg from '../../assets/icons.png';
 
 const Skills = () => {
   return (
-    <section className='skills'>
+    <section className='skills' id='skills'>
       <div className='container'>
         <h2>
           <span>What</span> I Do
@@ -12,7 +12,7 @@ const Skills = () => {
           I’m in love with MERN stack applications and Web Design , but I always
           like to learn new technologies . Some of them is listed below
         </p>
-        <div>
+        <div style={{ textAlign: 'center' }}>
           <h3>Skills</h3>
           <div className='skills-icons'>
             <div>

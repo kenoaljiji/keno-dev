@@ -32,6 +32,11 @@
       &::placeholder {
         color: rgba(255, 255, 255, 0.56);
       }
+
+      &:focus {
+        outline: none;
+        border: 1px solid rgba(#eee, 0.1);
+      }
     }
 
     textarea {

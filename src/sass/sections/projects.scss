@@ -11,6 +11,7 @@
   }
 
   &-description {
+    text-align: center;
     max-width: 70rem;
     margin: 5rem auto 10rem auto;
   }
@@ -99,7 +100,11 @@
       display: flex;
       margin-top: 2rem;
       .icon {
-        width: 30px;
+        width: 35px;
+
+        @include respond(phone) {
+          width: 30px;
+        }
       }
       li {
         margin-right: 7px;

@@ -28,14 +28,31 @@ footer {
     p {
       margin-top: 1rem;
     }
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
   }
 
   &-links {
+    @include respond(tab-port) {
+      text-align: center;
+      margin: auto;
+      padding-left: 3rem;
+    }
   }
 
   &-adress {
     p {
       margin-bottom: 1rem;
+    }
+
+    @include respond(tab-port) {
+      width: 50%;
+      text-align: center;
+      margin: auto;
     }
   }
 
@@ -46,9 +63,29 @@ footer {
       color: $color-red;
       margin-bottom: 1.5rem;
     }
-    i {
-      margin-right: 20px;
+
+    &--icons {
+      display: flex;
+      justify-content: space-around;
+
+      @include respond(tab-port) {
+        width: 100px;
+        margin: auto;
+      }
+    }
+
+    a {
       font-size: 2.4rem;
+    }
+
+    a:link {
+      color: #fff;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      margin: auto;
     }
   }
   &-copyright {

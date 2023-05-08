@@ -4,7 +4,7 @@ import image from '../assets/kenodev.png';
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='container flex-between'>
+      <div className='container flex-between wrap'>
         <div className='footer-logo'>
           <h3>
             Keno<span>Dev</span>
@@ -39,10 +39,16 @@ const Footer = () => {
         </div>
         <div className='footer-socials'>
           <h4>Let's Chat</h4>
-          <div className='socials-icons'>
-            <i class='fa-brands fa-linkedin'></i>
-            <i class='fa-brands fa-github'></i>
-            <i class='fa-brands fa-instagram'></i>
+          <div className='footer-socials--icons'>
+            <a href='/'>
+              <i class='fa-brands fa-linkedin'></i>
+            </a>
+            <a href='/data'>
+              <i class='fa-brands fa-github'></i>
+            </a>
+            <a href='/'>
+              <i class='fa-brands fa-instagram'></i>
+            </a>
           </div>
         </div>
       </div>

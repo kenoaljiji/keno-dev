@@ -3,16 +3,16 @@ import image from '../../assets/kenan2.png';
 
 const About = () => {
   return (
-    <section className='about bg-secondary'>
+    <section className='about bg-secondary' id='about'>
       <div className='container'>
         <h2>
-          Get Now<span> Me</span> Better
+          About<span> Me</span>
         </h2>
 
         <div className='about-content'>
           <div className='mt-5'>
             <h3>
-              <span>About</span> Me
+              Get to know <span>Me</span>
             </h3>
             <div className='about-description'>
               <p>
@@ -40,7 +40,20 @@ const About = () => {
           <div className='about-picture'>
             <div>
               <img src={image} alt='Kenan 2' />
-              <div></div>
+              <div className='socials'>
+                <h4>Follow Me</h4>
+                <div className='socials-icons'>
+                  <a href='/'>
+                    <i class='fa-brands fa-linkedin'></i>
+                  </a>
+                  <a href='/data'>
+                    <i class='fa-brands fa-github'></i>
+                  </a>
+                  <a href='/'>
+                    <i class='fa-brands fa-instagram'></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

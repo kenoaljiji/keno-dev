@@ -11,6 +11,7 @@
 html {
   height: 100%;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
   @include respond(tab-land) {
     font-size: 50%;
@@ -41,6 +42,7 @@ h1 {
 }
 h2 {
   font-size: 4.8rem;
+  text-align: center;
 
   @include respond(tab-land) {
     font-size: 3.5rem;
@@ -76,7 +78,9 @@ h1 {
 a {
   text-decoration: none;
 }
-a:visited {
+
+a:visited,
+a:link {
   color: #fff;
 }
 ul li {
@@ -102,24 +106,6 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-/* .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  grid-gap: 2rem;
-  padding-bottom: 10rem;
-  @include respond(tab-land) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @include respond(tab-port) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include respond(phone) {
-    grid-template-columns: 1fr;
-  }
-} */
 
 body {
   width: 100vw;
@@ -131,40 +117,6 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  background: #fff;
-}
-
-button {
-  outline: none;
-  border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  cursor: pointer;
-  position: absolute;
-  top: 18px;
-  left: 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: #fff;
-  background: transparent;
 }
 
 ul,
@@ -184,36 +136,6 @@ li {
   list-style: none;
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.icon-placeholder {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  flex: 40px 0;
-  margin-right: 20px;
-}
-
-.text-placeholder {
-  border-radius: 5px;
-  width: 200px;
-  height: 20px;
-  flex: 1;
-}
-
-.refresh {
-  padding: 10px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
