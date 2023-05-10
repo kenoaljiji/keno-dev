@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { menu } from './data';
 
 const Menu = () => {
@@ -18,7 +18,7 @@ const Menu = () => {
   };
 
   return (
-    <div class='menu-wrap'>
+    <div className='menu-wrap'>
       <input
         type='checkbox'
         className='toggler'
@@ -28,26 +28,38 @@ const Menu = () => {
       <div className='hamburger'>
         <div></div>
       </div>
-      <div class='menu'>
+      <div className='menu'>
         <div>
           <div className={ItemIsClicked ? 'menu-items hide' : 'menu-items'}>
             <ul>
               {menu.map((el) => (
-                <li key={el.item}>
+                <li key={el}>
                   <a href={'#' + el} onClick={() => displayLoadingPage()}>
                     {el}
                   </a>
                 </li>
               ))}
               <div className='social-icons'>
-                <a href='/'>
-                  <i class='fa-brands fa-linkedin'></i>
+                <a
+                  href='https://www.linkedin.com/in/kenan-aljiji-04750bbb'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <i className='fa-brands fa-linkedin'></i>
                 </a>
-                <a href='/data'>
-                  <i class='fa-brands fa-github'></i>
+                <a
+                  href='https://github.com/kenoaljiji'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <i className='fa-brands fa-github'></i>
                 </a>
-                <a href='/'>
-                  <i class='fa-brands fa-instagram'></i>
+                <a
+                  href='https://www.instagram.com/k3no_a'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <i className='fa-brands fa-instagram'></i>
                 </a>
               </div>
             </ul>

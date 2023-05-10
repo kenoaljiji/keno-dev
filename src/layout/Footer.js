@@ -1,5 +1,4 @@
 import React from 'react';
-import image from '../assets/kenodev.png';
 
 const Footer = () => {
   return (
@@ -15,19 +14,19 @@ const Footer = () => {
         <div className='footer-links'>
           <ul>
             <li>
-              <a href='#'>Home</a>
+              <a href='#home'>Home</a>
             </li>
             <li>
-              <a href='#'>Projects</a>
+              <a href='#projects'>Projects</a>
             </li>
             <li>
-              <a href='#'>Skills</a>
+              <a href='#skills'>Skills</a>
             </li>
             <li>
-              <a href='#'>About</a>
+              <a href='#about'>About</a>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <a href='#contact'>Contact</a>
             </li>
           </ul>
         </div>
@@ -40,21 +39,33 @@ const Footer = () => {
         <div className='footer-socials'>
           <h4>Let's Chat</h4>
           <div className='footer-socials--icons'>
-            <a href='/'>
-              <i class='fa-brands fa-linkedin'></i>
+            <a
+              href='https://www.linkedin.com/in/kenan-aljiji-04750bbb'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <i className='fa-brands fa-linkedin'></i>
             </a>
-            <a href='/data'>
-              <i class='fa-brands fa-github'></i>
+            <a
+              href='https://github.com/kenoaljiji'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <i className='fa-brands fa-github'></i>
             </a>
-            <a href='/'>
-              <i class='fa-brands fa-instagram'></i>
+            <a
+              href='https://www.instagram.com/k3no_a'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <i className='fa-brands fa-instagram'></i>
             </a>
           </div>
         </div>
       </div>
       <div className='footer-copyright'>
         <p>
-          Designed and developed with <i class='fa-solid fa-heart'></i>
+          Designed and developed with <i className='fa-solid fa-heart'></i>
         </p>
       </div>
     </footer>

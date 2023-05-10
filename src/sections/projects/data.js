@@ -23,7 +23,7 @@ export const projects = [
   {
     src: image2,
     name: 'Contextus',
-    description: 'Custom Translator App for students',
+    description: 'MERN stack Custom Translator App',
     buttonText: 'Visit Page',
     url: 'https://contextus.at',
     tech: [mongodb, react, node],

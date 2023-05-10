@@ -1,18 +1,10 @@
 .btn-container {
+  display: inline-block;
   margin-top: 8rem;
 
-  /*   a {
-    position: relative;
-    border-radius: 5px;
-    font-size: 2rem;
-    font-family: inherit;
-    display: inline-block;
-    text-align: center;
-    color: #fff;
-    padding: 12px 40px;
-    border: 1px solid #eee;
-    z-index: 999;
-  } */
+  a {
+    display: flex;
+  }
 }
 
 .cta {

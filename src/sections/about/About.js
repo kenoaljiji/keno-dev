@@ -16,25 +16,26 @@ const About = () => {
             </h3>
             <div className='about-description'>
               <p>
-                I’m a Fullstack Developer located in Bosnia. I have a serious
-                passion for UI effects, animations and creating intuitive,
-                dynamic user experiences.
+                Hi there! I'm a Fullstack Web Developer with a passion for
+                designing beautiful and functional web applications and sites
+                with creative solutions.
               </p>
               <p>
-                My design passion is not standard design I usually design when I
-                want to visual express myself
+                I'm always eager to explore new technologies and stay up-to-date
+                with the latest trends in the industry. I approach each project
+                with a sense of playfulness and joy, and I think that shows in
+                the final product.
               </p>
               <p>
-                I always gain new knowledge . Always stay in new technologies.
+                My favorite technology stack is MERN, and I'm particularly
+                passionate about JavaScript.
               </p>
-            </div>
-            <h3>
-              <span>Want</span> To Hire Me
-            </h3>
-            <div className='btn-container mb-2'>
-              <a href='/' className='cta'>
-                <span>Contact Me</span>
-              </a>
+              <p>
+                I'm also an artist at heart, and I love to express myself
+                through music. For me, music and coding have a lot in common:
+                both require creativity, discipline, and a willingness to take
+                risks.
+              </p>
             </div>
           </div>
           <div className='about-picture'>
@@ -43,14 +44,26 @@ const About = () => {
               <div className='socials'>
                 <h4>Follow Me</h4>
                 <div className='socials-icons'>
-                  <a href='/'>
-                    <i class='fa-brands fa-linkedin'></i>
+                  <a
+                    href='https://www.linkedin.com/in/kenan-aljiji-04750bbb'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <i className='fa-brands fa-linkedin'></i>
                   </a>
-                  <a href='/data'>
-                    <i class='fa-brands fa-github'></i>
+                  <a
+                    href='https://github.com/kenoaljiji'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <i className='fa-brands fa-github'></i>
                   </a>
-                  <a href='/'>
-                    <i class='fa-brands fa-instagram'></i>
+                  <a
+                    href='https://www.instagram.com/k3no_a'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <i className='fa-brands fa-instagram'></i>
                   </a>
                 </div>
               </div>

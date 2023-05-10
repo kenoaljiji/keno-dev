@@ -12,7 +12,7 @@ const Home = () => {
             Web Developer
           </h1>
           <div className='home-text'>
-            <p
+            <div
               className='home-text--typing'
               style={{
                 marginBottom: '10px',
@@ -21,18 +21,18 @@ const Home = () => {
             >
               {'<p>'}
               <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-
-                    .typeString('Web Designer')
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString(' Fullstack Developer')
-                    .start();
+                options={{
+                  strings: [
+                    'Web Designer',
+                    'MERN stack Developer',
+                    'Fullstack Developer',
+                  ],
+                  autoStart: true,
+                  loop: true,
                 }}
               />
               {'</p>'}
-            </p>
+            </div>
             <p>
               <span className='home-text--yellow'> alert</span>("I’m looking for
               new opportunity");

@@ -8,7 +8,7 @@ const Card = ({ item }) => {
           <img src={item.src} alt={item.name} className='logo' />
           <ul className='flip-card-icons'>
             {item.tech.map((el, index) => (
-              <li>
+              <li key={el}>
                 <img src={el} alt='' className='icon' />
               </li>
             ))}

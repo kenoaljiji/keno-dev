@@ -1,8 +1,6 @@
 module.exports = {
-  //...
   module: {
     rules: [
-      // Apply loader
       {
         test: /\.scss$/,
         use: [
@@ -13,9 +11,6 @@ module.exports = {
           {
             loader: 'sass-resources-loader',
             options: {
-              // Provide path to the file with resources
-
-              // Or array of paths
               resources: [
                 './src/sass/base.scss',
                 './src/sass/mixins.scss',
@@ -28,6 +23,4 @@ module.exports = {
       },
     ],
   },
-
-  //...
 };
