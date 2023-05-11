@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { inputFields, validate } from './data';
+import axios from 'axios';
+import { localhost } from '../../config';
 
 const Contact = () => {
   const [values, setValues] = useState({
@@ -10,16 +12,8 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const errors = validate(values);
-    setErrors(errors);
-
-    if (Object.keys(errors).length === 0) {
-      console.log('Form submitted', values);
-    }
-  };
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -39,6 +33,46 @@ const Contact = () => {
 
     setErrors({ ...errors, [name]: error });
   };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    // Validate the form data
+    const validationErrors = validate(values);
+    setErrors(validationErrors);
+
+    // If there are no validation errors, send the form data to the server
+    if (Object.keys(validationErrors).length === 0) {
+      try {
+        // Send the form data to the server
+        const response = await axios.post(localhost + '/submit-form', values, {
+          headers: { 'Content-Type': 'application/json' },
+        });
+
+        // Check the response status and update the state accordingly
+        if (response.status === 200) {
+          setIsSent(true);
+        } else {
+          throw new Error('Error sending email');
+        }
+      } catch (error) {
+        console.error(error);
+        alert(
+          'There was an error sending your message. Please try again later.'
+        );
+      }
+    }
+
+    setIsSending(false);
+  };
+
+  if (isSent) {
+    return (
+      <div>
+        Thank you, {values.fullName}, for your message! We'll be in touch soon.
+      </div>
+    );
+  }
 
   return (
     <section className='contact' id='contact'>
