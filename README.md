@@ -1,4 +1,4 @@
-## MERN stack Cos-ecommerce app
+## KenoDev portfolio website
 
 ### how to run app
 
@@ -12,12 +12,12 @@
     <li>SMTP_EMAIL</li>
 </ul>
 
-##### Server is runing on localhost:8000 , but if you want to run with different localhost, just change in frontend/src/config.js localhost variable to you're localhost or server port, and also don't forget to change in server.js file CORS localhost
-
 #### npm install on root
 
 #### navigate on frontend folder
 
 #### npm install on frontend
+
+##### Server is running on localhost:8000 by default , but if you want to run with different localhost PORT, just change in frontend/src/config.js localhost variable to you're localhost and PORT that you define in env file, and also don't forget to change in server.js file CORS origin value to you're localhost if you needed!
 
 #### npm run dev on root

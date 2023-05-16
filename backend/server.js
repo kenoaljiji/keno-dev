@@ -48,7 +48,7 @@ app.post('/submit-form', async (req, res) => {
   // Create the email message
   const mailOptions = {
     from: email,
-    to: 'youremail@gmail.com', // enter you're email here
+    to: process.env.SMTP_EMAIL, // enter you're email here
     subject: subject,
     text: `Full Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`,
   };

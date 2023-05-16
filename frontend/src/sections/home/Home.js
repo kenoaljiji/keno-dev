@@ -17,6 +17,7 @@ const Home = () => {
               style={{
                 marginBottom: '10px',
                 marginTop: '20px',
+                fontWeight: '400',
               }}
             >
               {'<p>'}
