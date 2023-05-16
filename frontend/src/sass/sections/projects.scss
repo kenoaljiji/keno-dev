@@ -1,5 +1,5 @@
 .projects {
-  background-color: #323a3d;
+  background-color: $background-projects;
   padding-top: 5rem;
 
   @include respond(phone) {

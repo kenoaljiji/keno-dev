@@ -1,5 +1,5 @@
 .skills {
-  background-color: #323a43;
+  background-color: $background-skills;
   display: flex;
 
   @include respond(phone) {
