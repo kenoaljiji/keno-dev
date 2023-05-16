@@ -1,5 +1,5 @@
 import React from 'react';
-import iconsImg from '../../assets/icons.png';
+import iconsImg from '../../assets/icons2.png';
 
 const Skills = () => {
   return (

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { inputFields, validate } from './data';
+import Spinner from '../../components/Spinner';
 import axios from 'axios';
 import { localhost } from '../../config';
 
@@ -12,8 +13,9 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [isSending, setIsSending] = useState(false);
-  const [isSent, setIsSent] = useState(false);
+
+  const [message, setMessage] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -44,35 +46,46 @@ const Contact = () => {
     // If there are no validation errors, send the form data to the server
     if (Object.keys(validationErrors).length === 0) {
       try {
+        setLoading(true);
         // Send the form data to the server
-        const response = await axios.post(localhost + '/submit-form', values, {
-          headers: { 'Content-Type': 'application/json' },
-        });
+        const response = await axios.post(`${localhost}/submit-form`, values);
 
         // Check the response status and update the state accordingly
         if (response.status === 200) {
-          setIsSent(true);
+          setLoading(false);
+          setMessage({
+            type: 'success',
+            message: `Thank you, ${values.fullName}, for you message! We'll be in touch soon!`,
+          });
+          setValues({
+            fullName: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
         } else {
+          setMessage({
+            type: 'error',
+            message: 'Error sending email!',
+          });
           throw new Error('Error sending email');
         }
       } catch (error) {
+        setLoading(false);
         console.error(error);
-        alert(
-          'There was an error sending your message. Please try again later.'
-        );
+
+        setMessage({
+          type: 'error',
+          message:
+            'There was an error sending your message. Please try again later!',
+        });
       }
+
+      setTimeout(() => {
+        setMessage(null);
+      }, 2000);
     }
-
-    setIsSending(false);
   };
-
-  if (isSent) {
-    return (
-      <div>
-        Thank you, {values.fullName}, for your message! We'll be in touch soon.
-      </div>
-    );
-  }
 
   return (
     <section className='contact' id='contact'>
@@ -81,6 +94,7 @@ const Contact = () => {
           <h2>
             Contact <span>Me</span>
           </h2>
+
           <form action='' className='form' onSubmit={handleSubmit}>
             {inputFields.map((input, index) => (
               <div className='form-control' key={index}>
@@ -108,7 +122,20 @@ const Contact = () => {
               {/*  {errors.message && <div className='error'>{errors.message}</div>} */}
             </div>
             <div className='form-control'>
-              <input className='button' type='submit' value='Send' />
+              <div>
+                <input className='button' type='submit' value='Send' />
+              </div>
+            </div>
+            <div className='form-message'>
+              {loading ? (
+                <Spinner />
+              ) : (
+                message && (
+                  <p className={`form-message--${message?.type}`}>
+                    {message.message}
+                  </p>
+                )
+              )}
             </div>
           </form>
         </div>

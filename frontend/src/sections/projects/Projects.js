@@ -23,7 +23,7 @@ const Projects = () => {
           </div>
           <p className='projects-description'>
             I have also lot of projects on my{' '}
-            <a href='https://github.com/kenoaljiji'>GitHub</a> account ,20 of
+            <a href='https://github.com/kenoaljiji'>GitHub</a> account ,20+ of
             them are from PARAGON programming school, and they are on private
             repositories because of school law. If you want to check these out
             and you are the company, just email me so I can add you as a

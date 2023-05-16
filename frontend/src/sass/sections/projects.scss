@@ -81,6 +81,10 @@
       display: flex;
       padding: 0rem 3rem 0rem 3rem;
 
+      .btn-container {
+        margin-top: 3rem;
+      }
+
       @include respond(phone) {
         padding: 0rem 2rem 0rem 2rem;
       }

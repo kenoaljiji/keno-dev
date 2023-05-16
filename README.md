@@ -5,11 +5,14 @@
 ### Add on root .env file with variable
 
 <ul>
-    <li>NODE_ENV</li>
     <li>PORT</li>
-    <li>MONGO_URI</li>
-    <li>JWT_SECRET</li>
+    <li>SMTP_HOST</li>
+    <li>SMTP_USERNAME</li>
+    <li>SMTP_PASSWORD</li>
+    <li>SMTP_EMAIL</li>
 </ul>
+
+##### Server is runing on localhost:8000 , but if you want to run with different localhost, just change in frontend/src/config.js localhost variable to you're localhost or server port, and also don't forget to change in server.js file CORS localhost
 
 #### npm install on root
 
@@ -18,11 +21,3 @@
 #### npm install on frontend
 
 #### npm run dev on root
-
-### Login info
-
-email: `ivan@cos.com`,
-password: 123456
-
-email: `amir@cos.com`,
-password: 123456

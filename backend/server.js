@@ -1,15 +1,30 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import nodemailer from 'nodemailer';
+var express = require('express');
+var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
+var dotenv = require('dotenv');
+const cors = require('cors');
+
+dotenv.config();
 
 const app = express();
+
 const port = process.env.PORT || 8000;
+const user = process.env.SMTP_USERNAME;
+const pass = process.env.SMTP_PASSWORD;
+const smtpHost = process.env.SMTP_HOST;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use(
+  cors({
+    origin: 'http://localhost:8000',
+  })
+);
+
 app.post('/submit-form', async (req, res) => {
   const { fullName, email, subject, message } = req.body;
+  console.log(user, pass);
 
   // Check if all the required fields are present
   if (!fullName || !email || !subject || !message) {
@@ -18,12 +33,12 @@ app.post('/submit-form', async (req, res) => {
 
   // Create a nodemailer transport object
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
+    host: smtpHost,
     port: 465,
     secure: true,
     auth: {
-      user: 'keno.a89@gmail.com',
-      pass: 'okqidsnvelleumgs',
+      user: user,
+      pass: pass,
     },
     tls: {
       rejectUnauthorized: false,
@@ -33,7 +48,7 @@ app.post('/submit-form', async (req, res) => {
   // Create the email message
   const mailOptions = {
     from: email,
-    to: 'keno.a89@gmail.com',
+    to: 'youremail@gmail.com', // enter you're email here
     subject: subject,
     text: `Full Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`,
   };
