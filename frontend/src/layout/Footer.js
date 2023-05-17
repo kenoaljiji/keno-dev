@@ -35,6 +35,7 @@ const Footer = () => {
           <p>77220</p>
           <p>Cazin</p>
           <p>Bosnia and Herzegovina</p>
+          <p style={{ marginTop: '2rem' }}>kenan@kenodev.net</p>
         </div>
         <div className='footer-socials'>
           <h4>Let's Chat</h4>

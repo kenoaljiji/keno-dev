@@ -10,6 +10,10 @@ footer {
   text-align: left;
   padding-top: 5rem;
 
+  @include respond(phone) {
+    padding-top: 2rem;
+  }
+
   p {
     font-size: 2rem;
   }
@@ -67,6 +71,7 @@ footer {
     &--icons {
       display: flex;
       justify-content: space-around;
+      padding-bottom: 1rem;
 
       @include respond(tab-port) {
         width: 100px;

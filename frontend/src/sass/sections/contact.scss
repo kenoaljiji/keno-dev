@@ -1,7 +1,11 @@
 .contact {
   display: block;
   padding-top: 5rem;
-  height: 95vh;
+
+  @include respond(phone) {
+    padding-top: 4rem;
+  }
+
   h2 {
     span {
       color: $color-red;
@@ -13,7 +17,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content;
     grid-row-gap: 20px;
-    margin-top: 7rem;
+    margin-top: 11rem;
+
+    @include respond(phone) {
+      margin-top: 7rem;
+    }
 
     @include respond(phone) {
       display: flex;
