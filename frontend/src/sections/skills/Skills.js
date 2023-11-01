@@ -9,8 +9,8 @@ const Skills = () => {
           <span>What</span> I Do
         </h2>
         <p className='skills-description'>
-          I’m in love with MERN stack applications and Web Design , but I always
-          like to learn new technologies . Some of them is listed below
+          I have experience working on MERN stack ,Javascript and Web Design ,
+          but I always like to learn new technologies
         </p>
         <div style={{ textAlign: 'center' }}>
           <h3>Skills</h3>

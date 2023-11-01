@@ -70,7 +70,7 @@ footer {
 
     &--icons {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       padding-bottom: 1rem;
 
       @include respond(tab-port) {

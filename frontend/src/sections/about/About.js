@@ -21,20 +21,14 @@ const About = () => {
                 with creative solutions.
               </p>
               <p>
-                I'm always eager to explore new technologies and stay up-to-date
-                with the latest trends in the industry. I approach each project
-                with a sense of playfulness and joy, and I think that shows in
-                the final product.
+                I'm always eager to explore new technologies . I approach each
+                project with a sense of playfulness and joy and really like to
+                get things done on time
               </p>
               <p>
                 My favorite technology stack is MERN, and I'm particularly
-                passionate about JavaScript.
-              </p>
-              <p>
-                I'm also an artist at heart, and I love to express myself
-                through music. For me, music and coding have a lot in common:
-                both require creativity, discipline, and a willingness to take
-                risks.
+                passionate about JavaScript , but I'm always interested in
+                learning new technologies.
               </p>
             </div>
           </div>
@@ -57,13 +51,6 @@ const About = () => {
                     rel='noreferrer'
                   >
                     <i className='fa-brands fa-github'></i>
-                  </a>
-                  <a
-                    href='https://www.instagram.com/k3no_a'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <i className='fa-brands fa-instagram'></i>
                   </a>
                 </div>
               </div>

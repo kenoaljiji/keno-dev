@@ -44,6 +44,7 @@ const Footer = () => {
               href='https://www.linkedin.com/in/kenan-aljiji-04750bbb'
               target='_blank'
               rel='noreferrer'
+              style={{ marginRight: '1rem' }}
             >
               <i className='fa-brands fa-linkedin'></i>
             </a>
@@ -54,13 +55,13 @@ const Footer = () => {
             >
               <i className='fa-brands fa-github'></i>
             </a>
-            <a
+            {/*    <a
               href='https://www.instagram.com/k3no_a'
               target='_blank'
               rel='noreferrer'
             >
               <i className='fa-brands fa-instagram'></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

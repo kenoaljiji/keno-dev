@@ -24,9 +24,9 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    'Web Designer',
                     'MERN stack Developer',
-                    'Fullstack Developer',
+                    'JavaScript Developer',
+                    'Web Designer',
                   ],
                   autoStart: true,
                   loop: true,
@@ -35,7 +35,7 @@ const Home = () => {
               {'</p>'}
             </div>
             <p>
-              <span className='home-text--yellow'> alert</span>("I’m looking for
+              <span className='home-text--yellow'>alert</span>("I’m looking for
               new opportunity");
             </p>
             <div className='btn-container'>

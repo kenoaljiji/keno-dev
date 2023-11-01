@@ -39,7 +39,10 @@ const Menu = () => {
                   </a>
                 </li>
               ))}
-              <div className='social-icons'>
+              <div
+                className='social-icons'
+                style={{ justifyContent: 'center' }}
+              >
                 <a
                   href='https://www.linkedin.com/in/kenan-aljiji-04750bbb'
                   target='_blank'
@@ -54,13 +57,13 @@ const Menu = () => {
                 >
                   <i className='fa-brands fa-github'></i>
                 </a>
-                <a
+                {/*   <a
                   href='https://www.instagram.com/k3no_a'
                   target='_blank'
                   rel='noreferrer'
                 >
                   <i className='fa-brands fa-instagram'></i>
-                </a>
+                </a> */}
               </div>
             </ul>
           </div>
