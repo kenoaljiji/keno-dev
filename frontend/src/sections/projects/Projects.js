@@ -11,10 +11,10 @@ const Projects = () => {
         </h2>
         <div className='projects-content'>
           <p className='projects-description'>
-            I want to share with you some real world web applications that I
-            made , and my code for this portfolio .I'm committed to creating
-            functional and delightful user experiences, and I hope you enjoy
-            exploring my projects!
+            I want to share with you some real world projects that I made , and
+            my code for this portfolio .I'm committed to creating functional and
+            delightful user experiences, and I hope you enjoy exploring my
+            projects!
           </p>
           <div className='projects-cards'>
             {projects.map((item) => (
