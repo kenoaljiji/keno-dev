@@ -21,14 +21,13 @@ const About = () => {
                 with creative solutions.
               </p>
               <p>
-                I'm always eager to explore new technologies . I approach each
-                project with a sense of playfulness and joy and really like to
-                get things done on time
+                I approach each project with a sense of playfulness and joy and
+                really like to get things done on time
               </p>
               <p>
                 My favorite technology stack is MERN, and I'm particularly
-                passionate about JavaScript , but I'm always interested in
-                learning new technologies.
+                passionate about JavaScript , but I'm interested in learning new
+                technologies.
               </p>
             </div>
           </div>
