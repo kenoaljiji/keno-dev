@@ -29,6 +29,11 @@
   }
 
   &-icons {
+    padding-bottom: 40px;
+
+    @include respond(phone) {
+      padding-bottom: 20px;
+    }
     img {
       width: 90%;
     }

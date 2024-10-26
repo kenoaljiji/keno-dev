@@ -29,10 +29,10 @@ const About = () => {
                 <p>
                   My main focus is on solving clients' unique challenges by
                   designing and building beautiful, responsive websites and
-                  applications that drive results. With attention to SEO and
-                  user experience, I’m dedicated to creating solutions that not
-                  only look great but also perform exceptionally well, helping
-                  clients reach their goals effectively.
+                  applications that drive results. I’m dedicated to creating
+                  solutions that not only look great but also perform
+                  exceptionally well, helping clients reach their goals
+                  effectively.
                 </p>
               </p>
             </div>
