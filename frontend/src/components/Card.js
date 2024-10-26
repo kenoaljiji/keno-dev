@@ -23,7 +23,7 @@ const Card = ({ item }) => {
           <h3>{item.name}</h3>
           <p>{item.description}</p>
           <div className='btn-container'>
-            <a href={item.url} className='cta'>
+            <a href={item.url} className='cta' target='_blank' rel='noreferrer'>
               <span>{item.buttonText}</span>
             </a>
           </div>

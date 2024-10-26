@@ -15,6 +15,15 @@
 
   &-content {
     display: flex;
+    flex: 1 1;
+
+    img {
+      max-width: unset;
+
+      @include respond(tab-port) {
+        max-width: 100%;
+      }
+    }
 
     gap: 20px;
 
@@ -25,7 +34,7 @@
   }
 
   &-description {
-    margin: 30px 10px;
+    margin: 30px 0px;
     background: rgba(22, 21, 21, 0.24);
     padding: 2.6rem;
 
@@ -45,7 +54,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 87px;
+    margin-top: 8px;
 
     @include respond(tab-port) {
       padding: 1rem;

@@ -1,1 +1,1 @@
-export const localhost = `https://backend-kenodev-production.up.railway.app`;
+export const localhost = `https://backend-kenodev.keni.ba`;

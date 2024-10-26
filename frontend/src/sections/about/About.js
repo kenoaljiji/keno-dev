@@ -16,18 +16,24 @@ const About = () => {
             </h3>
             <div className='about-description'>
               <p>
-                Hi there! I'm a Fullstack Web Developer with a passion for
-                designing beautiful and functional web applications and sites
-                with creative solutions.
+                Hello! I’m a Fullstack Web Developer and Designer who loves
+                creating functional and visually engaging web applications and
+                websites tailored to clients' needs.
               </p>
               <p>
-                I approach each project with a sense of playfulness and joy and
-                really like to get things done on time
+                I bring a flexible, results-driven approach to every project,
+                with a commitment to meeting deadlines and delivering quality
+                work.
               </p>
               <p>
-                My favorite technology stack is MERN, and I'm particularly
-                passionate about JavaScript , but I'm interested in learning new
-                technologies.
+                <p>
+                  My main focus is on solving clients' unique challenges by
+                  designing and building beautiful, responsive websites and
+                  applications that drive results. With attention to SEO and
+                  user experience, I’m dedicated to creating solutions that not
+                  only look great but also perform exceptionally well, helping
+                  clients reach their goals effectively.
+                </p>
               </p>
             </div>
           </div>

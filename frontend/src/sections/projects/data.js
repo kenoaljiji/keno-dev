@@ -1,6 +1,8 @@
 import image1 from '../../assets/keni.png';
 import image2 from '../../assets/contextus.png';
 import image3 from '../../assets/kenodev.png';
+import image4 from '../../assets/gesnatur.png';
+import image5 from '../../assets/satnica-white.png';
 
 import js from '../../assets/javascript.png';
 import html from '../../assets/html.png';
@@ -10,6 +12,8 @@ import mongodb from '../../assets/mongodb.png';
 import react from '../../assets/react.png';
 import node from '../../assets/node-js.png';
 import figma from '../../assets/figma.png';
+import wordpress from '../../assets/wordpress.png';
+import firebase from '../../assets/firebase.png';
 
 export const projects = [
   {
@@ -35,5 +39,13 @@ export const projects = [
     buttonText: 'GitHub',
     url: 'https://github.com/kenoaljiji/keno-dev',
     tech: [react, node, figma],
+  },
+  {
+    src: image4,
+    name: 'Gesnatur',
+    description: 'Web site for Supplements and Cosmetic Shop',
+    buttonText: 'Visit Page',
+    url: 'https://gesnatur.at',
+    tech: [wordpress, figma],
   },
 ];
