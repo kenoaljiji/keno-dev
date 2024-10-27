@@ -1,1 +1,1 @@
-export const localhost = `https://backend-kenodev.keni.ba`;
+export const localhost = `http://localhost:8000`;
